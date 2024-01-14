@@ -1,0 +1,45 @@
+@import "fonts.css";
+
+.foot {
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+
+.maker {
+    font-family: "Barlow-Bold";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.copy {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.created{
+    font-size: 15px;
+}
+
+.creatorsEmail {
+    font-family: "Barlow-light";
+    color: #A6A26A;
+}
+
+@media screen and (max-width: 450px) {
+
+    .maker {
+        margin-top: 20px;
+    }
+
+    .copy {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    
+    .created{
+        font-size: 13px;
+    }
+}

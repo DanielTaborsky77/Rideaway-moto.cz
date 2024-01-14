@@ -1,0 +1,25 @@
+@import 'banner.css';
+@import 'navbar.css';
+@import 'motos.css';
+@import 'aboutus.css';
+@import 'reserve.css'; 
+@import 'footer.css'; 
+@import 'slider.css';
+@import 'moreInfo.css';
+@import 'cookiesAccept.css';
+@import 'emailSended.css';
+@import 'priceList.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+body {
+  background-color: #F8F8F8;
+}
+
+html {
+  scroll-behavior: smooth;
+}

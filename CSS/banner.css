@@ -1,0 +1,206 @@
+@import "fonts.css";
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url("../Images/IMG_4210.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    background-position: 10% 25%;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* Levá strana */
+.leftSideBanner {
+    margin-top: 200px;
+}
+
+.banner .leftSideBanner h1 {
+    font-family: "Barlow-ExtraBold";
+    color: #CACA9F;
+    font-size: 65px;
+    font-weight: 1000;
+}
+
+.banner .leftSideBanner h2 {
+    font-family: "Barlow-Medium";
+    color: #F8F8F8;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-weight: 100;
+}
+
+.reserveBanner {
+    font-family: "Barlow-Bold";
+    background-color: #A6A26A;
+    color: #080800;
+    border: #CACA9F 2px solid;
+    font-size: 25px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.reserveBanner:hover {
+    background-color: #CACA9F;
+    color: #F8F8F8;
+    border: #A6A26A 2px solid;
+}
+
+/* Pravá strana */
+.rightSideBanner {
+    width: auto;
+    margin-top: 420px;
+}
+
+.rightSideBanner .plus {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+.rightSideBanner .plus img {
+    width: 40px;
+}
+
+.rightSideBanner .plus h3 {
+    font-family: "Barlow-ExtraLight";
+    color: #F8F8F8;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 100;
+}
+    
+/*Responzivita*/    
+@media screen and (max-width: 1250px) {
+    .banner {
+      display:flex;
+      flex-direction: column;
+      height: 900px;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    .leftSideBanner {
+        width: 100%;
+    }
+
+    .rightSideBanner {
+        margin-top: 50px; 
+    }
+
+    .rightSideBanner .plus {
+        flex-direction: row-reverse;
+    }
+
+    .rightSideBanner .plus h3 {
+        margin-left: 0px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .banner .leftSideBanner h1 {
+        font-size: 55px;
+    }
+
+    .banner .leftSideBanner h2 {
+        color: #F8F8F8;
+        font-size: 35px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        font-weight: 100;
+    }
+
+    .leftSideBanner {
+        margin-top: 70px;
+    }
+
+    .rightSideBanner .plus h3 {
+        font-size: 25px;
+    }
+
+    .rightSideBanner .plus {
+        margin-bottom: 20px;
+    }
+
+    .rightSideBanner {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .banner {
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-evenly;
+    }
+
+    .leftSideBanner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner .leftSideBanner h1 {
+        text-align: center;
+    }
+
+    .banner .leftSideBanner h2 {
+        text-align: center; 
+        margin-bottom: 30px;
+    }
+
+    .rightSideBanner .plus {
+        flex-direction: row;
+    }
+
+    .rightSideBanner .plus h3 {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+
+    .reserveBanner {
+        font-size: 20px;
+        padding: 10px 30px 10px 30px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .banner {
+        height: 800px;
+    }
+
+    .banner .leftSideBanner h1 {
+        font-size: 11vw;
+    }
+
+    .banner .leftSideBanner h2 {
+        font-size: 8vw;   
+    }
+
+    .rightSideBanner .plus {
+        margin-bottom: 20px;
+    }
+
+    .rightSideBanner .plus img {
+        width: 30px;
+    }
+
+    .rightSideBanner .plus h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .reserveBanner {
+        font-size: 17px;
+        width: 100%;
+        padding: 15px 20px 15px 20px;
+    }
+}

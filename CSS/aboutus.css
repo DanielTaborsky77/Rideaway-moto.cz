@@ -1,0 +1,139 @@
+.aboutUs {
+    padding-top: 200px;
+    width: 100%;
+}
+
+.aboutUsContent {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description {
+    font-family: "Barlow-Medium";
+    margin-top: 25px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.aboutButts {
+    margin-top: 100px;
+}
+
+.ourmotosButt {
+    font-family: "Barlow-Bold";
+    border: #A6A26A solid 2px;
+    background-color: #f8f8f800;
+    padding: 15px 50px 15px 50px;
+    font-size: 20px;
+    color: #080800;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ourmotosButt:hover {
+    background-color: #CACA9F;
+}
+
+.aboutusOfferButt {
+    font-family: "Barlow-Bold";
+    margin-left: 50px;
+    border:#CACA9F solid 2px;
+    background-color:#080800e0;
+    padding: 15px 50px 15px 50px;
+    font-size: 20px;
+    color: #a6a26a;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.aboutusOfferButt:hover {
+    background-color:#caca9f00;
+    color: #080800;
+}
+
+@media screen and (max-width: 1400px) {
+    .logoDiv{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1305px) {
+    .aboutUs{
+        padding-top: 100px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .aboutUsContent {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .aboutButts {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .description {
+        text-align: center;
+        height: 250px;
+    }
+
+    .aboutButts {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .aboutusOfferButt {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .description {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .description {
+        height: 350px;
+    }
+
+    .aboutButts {
+        margin-top: 25px;
+    }
+
+    .ourmotosButt {
+        padding: 15px 35px 15px 35px;
+        font-size: 16px;
+    }
+
+    .aboutusOfferButt {
+        padding: 15px 35px 15px 35px;
+        font-size: 16px;
+    }
+}
+

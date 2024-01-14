@@ -1,0 +1,43 @@
+@import "fonts.css";
+
+.email-sended {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.email-modal-content {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+}
+
+.email-modal-content h2 {
+    font-family: "Barlow-Bold";
+    margin-bottom: 20px;
+}
+
+.email-modal-content p {
+    font-family: "Barlow-Medium";
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.close-email-modal {
+    font-family: "Barlow-Medium";
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #A6A26A;
+    background-color: #030303;
+}

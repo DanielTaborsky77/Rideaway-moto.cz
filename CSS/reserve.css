@@ -1,0 +1,406 @@
+@import "fonts.css";
+
+.contactReservation {
+    padding-top: 200px;
+    width: 100%;
+}
+
+.contactReserveTitle {
+    width: 500px;
+    margin: 0 auto;
+    border-bottom: solid 1px #C2C292;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.contactReserveTitle h1 {
+    font-family: "Barlow-Bold";
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.contactReservation h4 {
+    font-family: "Barlow-Medium";
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reservationBack {
+    background-image: url("../Images/reserveMoto.jpeg");
+    background-size: 100%;
+    background-position: 20% 45%;
+    background-size: cover;
+}
+
+.leftRight {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation {
+    margin-left: 200px;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+label {
+    font-family: "Barlow-medium";
+    color: #F8F8F8;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.twoDataRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dataRow {
+    margin-bottom: 20px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column; 
+}
+
+.finput {
+    color: black;
+    font-family: "Barlow-Medium";
+    width: 200px;
+    padding: 10px 20px 10px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+}
+
+.sinput {
+    color: black;
+    font-family: "Barlow-Medium";
+    width: 200px;
+    padding: 10px 20px 10px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+}
+
+.onlyInput {
+    color: black;
+    font-family: "Barlow-Medium";
+    padding: 10px 20px 10px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+}
+
+.checkDiv {
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.check {
+    position: absolute;
+    margin-top: 15px;
+    margin-right: 20px;
+    height: 1px;
+    width: 1px;
+}
+
+.check + .check-label::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+.check:checked + .check-label::before {
+    background-color: #A6A26A;
+    content: "\2713";
+}
+
+.check-label {
+    padding-left: 30px;
+    position: relative;
+}
+
+.resButts {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourMotoreserveButt {
+    font-family: "Barlow-Bold";
+    border: #A6A26A solid 1px;
+    background-color: #f8f8f800;
+    padding: 15px 50px;
+    font-size: 17px;
+    color: #F8F8F8;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.ourMotoreserveButt:hover {
+    background-color: #CACA9F;
+    color: #080800;
+}
+
+#reserve {
+    font-family: "Barlow-Bold";
+    border: #A6A26A solid 1px;
+    background-color:#CACA9F;
+    padding: 15px 50px;
+    font-size: 17px;
+    color: #080800;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#reserve:hover {
+    background-color:#caca9f00;
+    color: #f8f8f8;
+}
+
+.contactAndSocials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contact {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 200px;
+    margin-top: 200px;
+}
+
+.contactData {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.contactAtribute {
+    font-family: "Barlow-Medium";
+    font-size: 23px;
+    color: #f8f8f8;
+}
+
+.socials{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+
+
+@media screen and (max-width: 1288px) {
+    .contactReservation {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .reservation {
+        margin-left: 100px;
+    }
+
+    .contact {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .leftRight {
+        width: 100%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .reservation {
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .contactAndSocials {
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    .contact {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+    .socials {
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-bottom: 10px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .reservationBack {
+        background-image: url("../Images/reserveMoto.jpeg");
+        background-size: 100%;
+        background-position: 58% 5%;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .reservation {
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+
+    .contactReserveTitle {
+        width: 100%;
+    }
+
+    .reservation {
+        width: 90%;
+    }
+
+    .twoDataRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .finput {
+        -moz-appearance: none; /* Firefox */
+        -webkit-appearance: none; /* Safari a starší verze Chrome */
+        appearance: none; /* Standardní vzhled */
+        width: 100%;
+        padding: 10px 20px 10px 20px;
+        font-size: 17px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .sinput {
+        -moz-appearance: none; /* Firefox */
+        -webkit-appearance: none; /* Safari a starší verze Chrome */
+        appearance: none; /* Standardní vzhled */
+        width: 100%;
+        padding: 10px 20px 10px 20px;
+        font-size: 17px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .dataRow {
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    .data {
+        width: 100%;
+    }
+
+    .checkDiv {
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        display: flex;
+    }
+
+    .checkDiv2 {
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        display: flex;
+    }
+
+    .resButts {
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .ourMotoreserveButt {
+        width: 100%;
+    }
+
+    .reservationBack {
+        height: 1500px;
+    }
+
+    .contact {
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+        width: 100%;
+    }
+
+    .contactData {
+        justify-content: space-around;
+        margin-bottom: 35px;
+    }
+
+    .contactAtribute {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

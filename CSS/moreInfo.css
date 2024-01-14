@@ -1,0 +1,66 @@
+@import "fonts.css";
+
+#moreInfoJump {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Pro podporu v prohlížečích založených na WebKitu */
+
+  }
+  
+  #popup {
+    background-color: #fff;
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+    position: relative;
+  }
+
+  #closeButton {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  
+  #moreInfoJump h2 {
+    font-family: "Barlow-Bold";
+    font-size: 35px;
+    padding-bottom: 50px;
+    margin-left: 5px;
+  }
+
+  #moreInfoJump p {
+    font-family: "Barlow-Medium";
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-height: 750px) {
+    #moreInfoJump {
+    overflow-y: scroll;
+    position: block;
+    top: 0;
+    left: 0;
+    padding-top: 70vh;
+    padding-bottom: 60vh;  
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Pro podporu v prohlížečích založených na WebKitu */
+  }
+}
